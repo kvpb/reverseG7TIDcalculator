@@ -1,0 +1,44 @@
+[package]
+name = "g7tidrc"
+version = "1.0.0" #"1.00"
+authors = ["Karl Vincent Pierre Bertin <karl.v.p.bertin@gmail.com>"]
+edition = "2018"
+#rust-version = 
+description = "A generation VII trainer ID number reverse calculator."
+#documentation = ""
+readme = "README.md"
+repository = "https://github.com/kvpb/G7TIDreversecalculator"
+#license = "BSD-3-Clause"
+license-file = "LICENSE"
+keywords = ["generation", "vii", "7", "trainer", "ID", "number", "reverse", "calculator"]
+
+[dependencies]
+rand = "^0.8.0"
+libm = "^0.2"
+num-traits = "^0.2"
+
+[profile.dev]
+opt-level = 0
+debug = true
+overflow-checks = false
+incremental = true
+
+[profile.release]
+opt-level = 3
+debug = false
+overflow-checks = true
+lto = true
+panic = "abort"
+
+#	Cargo.toml
+#	G8TID Reverse Calculator
+#
+#	Karl V. P. B. `kvpb` AKA Karl Thomas George West `ktgw`
+#	+1 (DDD) DDD-DDDD
+#	+33 A BB BB BB BB
+#	local-part@domain
+#	local-part@domain
+#	https://www.linkedin.com/in/
+#	https://twitter.com/ktgwkvpb
+#	https://github.com/kvpb
+#	https://vm.tiktok.com/ZSwAmcFh/
